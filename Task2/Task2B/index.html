@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>CSS Box Model</title>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+
+    <style>
+        h1, p {
+            background-color: #bdc3c7;
+            padding: 1em .5em;
+        }
+
+        em, strong {
+            background-color: #80c2ee;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+
+            padding: 1em 0;
+
+            color: white;
+            font-size: 1.2rem;
+
+            border: 3px solid #34495e;
+            border-radius: 5px;
+            background-color: #3498db;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style='border-bottom: 5px solid #34495e;'>Headings Are Block Elements</h1>
+
+    <p>
+        Paragraphs are blocks, too. <em>However (and this is a big however), </em> &lt;em&gt; and
+        &lt;strong&gt; elements are not. They are <strong style='margin: 0 3em;'>inline</strong> elements.
+    </p>
+
+    <p style='margin: 2.5em 0;'>
+        Block elements define the flow fo the HTML document, while inline elements do not.
+    </p>
+
+    <button>Button</button>
+</body>
+</html>
